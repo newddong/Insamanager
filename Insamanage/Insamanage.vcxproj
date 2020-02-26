@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{E562B006-395E-404B-A94C-C6D291FABEEE}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>Insamanage</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Assign_Daily_work.h" />
+    <ClInclude Include="Biweekend_SaturDay.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="Chulgeun_isang.h" />
+    <ClInclude Include="CInsaListCtrl.h" />
+    <ClInclude Include="ClassView.h" />
+    <ClInclude Include="CMenuTree.h" />
+    <ClInclude Include="Code_Personpay_Assign.h" />
+    <ClInclude Include="Code_Personpay_List.h" />
+    <ClInclude Include="Code_Postnum_Assign.h" />
+    <ClInclude Include="CSqlEdit.h" />
+    <ClInclude Include="Daily_Work_View.h" />
+    <ClInclude Include="Depart_Attend_Daily.h" />
+    <ClInclude Include="Depart_Attend_List.h" />
+    <ClInclude Include="dialogexam.h" />
+    <ClInclude Include="Employee_Attend_Card_Assign.h" />
+    <ClInclude Include="FileView.h" />
+    <ClInclude Include="Insamanage.h" />
+    <ClInclude Include="InsamanageDoc.h" />
+    <ClInclude Include="InsamanageView.h" />
+    <ClInclude Include="Insa_Dep_Employee_View.h" />
+    <ClInclude Include="Insa_Person_Career_Assign.h" />
+    <ClInclude Include="Insa_Person_Info_Assign.h" />
+    <ClInclude Include="Insa_Person_Scholarship_Assign.h" />
+    <ClInclude Include="Insa_Person_Work_Year.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Menulist.h" />
+    <ClInclude Include="Mon_Attend_Print.h" />
+    <ClInclude Include="Mon_Dep_Daily_Att.h" />
+    <ClInclude Include="Mon_HolyDay_Check.h" />
+    <ClInclude Include="Mon_HolyDay_Gen.h" />
+    <ClInclude Include="Mon_HolyDay_View.h" />
+    <ClInclude Include="Mon_HolyDay_Viewedit.h" />
+    <ClInclude Include="Mon_Manager_Attend_View.h" />
+    <ClInclude Include="Mon_Overwork_View.h" />
+    <ClInclude Include="Mon_Person_Attend_Print.h" />
+    <ClInclude Include="Mon_Work_Data_Gen.h" />
+    <ClInclude Include="Mon_Work_Edit_View.h" />
+    <ClInclude Include="Mon_Work_Print.h" />
+    <ClInclude Include="OutputWnd.h" />
+    <ClInclude Include="Overtime_View.h" />
+    <ClInclude Include="Pay_Deduct_Extra_Assign.h" />
+    <ClInclude Include="Pay_Person_Monpay_Assign.h" />
+    <ClInclude Include="Pay_Var_Deduct_Extra_Assign.h" />
+    <ClInclude Include="Pay_Workpay_List.h" />
+    <ClInclude Include="Personal_Day_Assign.h" />
+    <ClInclude Include="Person_Attend_View.h" />
+    <ClInclude Include="Prog_dbmanage.h" />
+    <ClInclude Include="PropertiesWnd.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="sqlite3.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TimeCard_Gen.h" />
+    <ClInclude Include="ViewTree.h" />
+    <ClInclude Include="Code_Company_Assign.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Assign_Daily_work.cpp" />
+    <ClCompile Include="Biweekend_SaturDay.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="Chulgeun_isang.cpp" />
+    <ClCompile Include="CInsaListCtrl.cpp" />
+    <ClCompile Include="ClassView.cpp" />
+    <ClCompile Include="CMenuTree.cpp" />
+    <ClCompile Include="Code_Personpay_Assign.cpp" />
+    <ClCompile Include="Code_Personpay_List.cpp" />
+    <ClCompile Include="Code_Postnum_Assign.cpp" />
+    <ClCompile Include="CSqlEdit.cpp" />
+    <ClCompile Include="Daily_Work_View.cpp" />
+    <ClCompile Include="Depart_Attend_Daily.cpp" />
+    <ClCompile Include="Depart_Attend_List.cpp" />
+    <ClCompile Include="dialogexam.cpp" />
+    <ClCompile Include="Employee_Attend_Card_Assign.cpp" />
+    <ClCompile Include="FileView.cpp" />
+    <ClCompile Include="Insamanage.cpp" />
+    <ClCompile Include="InsamanageDoc.cpp" />
+    <ClCompile Include="InsamanageView.cpp" />
+    <ClCompile Include="Insa_Dep_Employee_View.cpp" />
+    <ClCompile Include="Insa_Person_Career_Assign.cpp" />
+    <ClCompile Include="Insa_Person_Info_Assign.cpp" />
+    <ClCompile Include="Insa_Person_Scholarship_Assign.cpp" />
+    <ClCompile Include="Insa_Person_Work_Year.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Menulist.cpp" />
+    <ClCompile Include="Mon_Attend_Print.cpp" />
+    <ClCompile Include="Mon_Dep_Daily_Att.cpp" />
+    <ClCompile Include="Mon_HolyDay_Check.cpp" />
+    <ClCompile Include="Mon_HolyDay_Gen.cpp" />
+    <ClCompile Include="Mon_HolyDay_View.cpp" />
+    <ClCompile Include="Mon_HolyDay_Viewedit.cpp" />
+    <ClCompile Include="Mon_Manager_Attend_View.cpp" />
+    <ClCompile Include="Mon_Overwork_View.cpp" />
+    <ClCompile Include="Mon_Person_Attend_Print.cpp" />
+    <ClCompile Include="Mon_Work_Data_Gen.cpp" />
+    <ClCompile Include="Mon_Work_Edit_View.cpp" />
+    <ClCompile Include="Mon_Work_Print.cpp" />
+    <ClCompile Include="OutputWnd.cpp" />
+    <ClCompile Include="Overtime_View.cpp" />
+    <ClCompile Include="Pay_Deduct_Extra_Assign.cpp" />
+    <ClCompile Include="Pay_Person_Monpay_Assign.cpp" />
+    <ClCompile Include="Pay_Var_Deduct_Extra_Assign.cpp" />
+    <ClCompile Include="Pay_Workpay_List.cpp" />
+    <ClCompile Include="Personal_Day_Assign.cpp" />
+    <ClCompile Include="Person_Attend_View.cpp" />
+    <ClCompile Include="Prog_dbmanage.cpp" />
+    <ClCompile Include="PropertiesWnd.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TimeCard_Gen.cpp" />
+    <ClCompile Include="ViewTree.cpp" />
+    <ClCompile Include="Code_Company_Assign.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Insamanage.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\Desktop\frmbackground.bmp" />
+    <Image Include="res\classview.bmp" />
+    <Image Include="res\classview_hc.bmp" />
+    <Image Include="res\class_view.ico" />
+    <Image Include="res\class_view_hc.ico" />
+    <Image Include="res\explorer.bmp" />
+    <Image Include="res\explorer_hc.bmp" />
+    <Image Include="res\fileview.bmp" />
+    <Image Include="res\fileview_hc.bmp" />
+    <Image Include="res\file_view.ico" />
+    <Image Include="res\file_view_hc.ico" />
+    <Image Include="res\frmbackground.bmp" />
+    <Image Include="res\Insamanage.ico" />
+    <Image Include="res\InsamanageDoc.ico" />
+    <Image Include="res\menuimages.bmp" />
+    <Image Include="res\menuimages_hc.bmp" />
+    <Image Include="res\output_wnd.ico" />
+    <Image Include="res\output_wnd_hc.ico" />
+    <Image Include="res\properties.bmp" />
+    <Image Include="res\properties_hc.bmp" />
+    <Image Include="res\properties_wnd.ico" />
+    <Image Include="res\properties_wnd_hc.ico" />
+    <Image Include="res\sort.bmp" />
+    <Image Include="res\sort_hc.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\userimages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Insamanage.aps" />
+    <None Include="packages.config" />
+    <None Include="res\Insamanage.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="sqlite3.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\cpprestsdk.v141.2.10.12.1\build\native\cpprestsdk.v141.targets" Condition="Exists('..\packages\cpprestsdk.v141.2.10.12.1\build\native\cpprestsdk.v141.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>이 프로젝트는 이 컴퓨터에 없는 NuGet 패키지를 참조합니다. 해당 패키지를 다운로드하려면 NuGet 패키지 복원을 사용하십시오. 자세한 내용은 http://go.microsoft.com/fwlink/?LinkID=322105를 참조하십시오. 누락된 파일은 {0}입니다.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\cpprestsdk.v141.2.10.12.1\build\native\cpprestsdk.v141.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cpprestsdk.v141.2.10.12.1\build\native\cpprestsdk.v141.targets'))" />
+  </Target>
+</Project>
